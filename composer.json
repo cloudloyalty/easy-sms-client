@@ -1,0 +1,32 @@
+{
+    "name": "cloudloyalty/easy-sms-client",
+    "description": "PHP client for easy-sms.ru platform",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "CloudLoyalty\\EasySmsClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CloudLoyalty\\EasySmsClientTests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.1",
+        "guzzlehttp/guzzle": "^6.0",
+        "jms/serializer": "^1.4 || ^2.0 || ^3.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.3",
+        "phpstan/phpstan-phpunit": "^0.12.5",
+        "phpunit/phpunit": "^7.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dmitry Khayrutdinov",
+            "email": "dmitry.khayrutdinov@gmail.com"
+        }
+    ]
+}
