@@ -13,6 +13,7 @@ jobs:
   build:
     runs-on: ${{ matrix.os }}
     strategy:
+      fail-fast: false
       matrix:
         php: [7.1, 7.2, 7.3, 7.4]
         os: [ubuntu-latest]
@@ -57,8 +58,6 @@ jobs:
 
     - name: Run phpunit
       run: ./vendor/bin/phpunit
-      continue-on-error: true
 
     - name: Run phpstan
       run: ./vendor/bin/phpstan analyse
-      continue-on-error: true
